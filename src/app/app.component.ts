@@ -61,8 +61,7 @@ export class AppComponent {
   }
 
   load() {
-    const data = localStorage.getItem('todos') || '';
+    const data = localStorage.getItem('todos') || '[]';
     this.todos = JSON.parse(data);
-
   }
 }
